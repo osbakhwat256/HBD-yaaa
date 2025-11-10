@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  background: linear-gradient(135deg, #ffd6e8, #ffe4f3);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #fff0f6;
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(255, 155, 185, 0.4);
+  max-width: 400px;
+  animation: float 4s ease-in-out infinite;
+  position: relative;
+}
+
+h1 {
+  color: #ff82a9;
+  margin-bottom: 15px;
+}
+
+.message {
+  color: #d94f8a;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.pig-img {
+  width: 100px;
+  margin-bottom: 20px;
+  animation: wiggle 3s infinite ease-in-out;
+}
+
+button {
+  background-color: #ffb6c1;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff82a9;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+  color: #ff82a9;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.sparkles {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  font-size: 1.5rem;
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}

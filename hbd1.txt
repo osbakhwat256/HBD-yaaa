@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday 🐷🎀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="sparkles">✨</div>
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pig" class="pig-img">
+    <h1>Happy Birthday, [Nama Temanmu] 🎉</h1>
+    <p class="message">
+      Semoga hari kamu seindah warna pink 🩷 dan seimut babi kecil ini 🐽  
+      Terus bahagia, terus bersinar yaa 💫
+    </p>
+    <button onclick="toggleMusic()">💖 Play Music 💖</button>
+    <audio id="music" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6fa1d1b1b9.mp3?filename=happy-birthday-117996.mp3"></audio>
+  </div>
+
+  <footer>Made with 🩷 by [Namamu]</footer>
+
+  <script>
+    function toggleMusic() {
+      const music = document.getElementById('music');
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>
